@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>rating</title>
+	<link rel="stylesheet" type="text/css" href="rating.css">
+	 <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+   <div class="container">
+     <div class="feedbackbox">
+      <h2 class='head'>Give Your Ratings</h2>
+       <div class="emoji">
+        <div id='emoji'>
+        <img src="E:\project html\images\poor.png">
+ <img src="E:\project html\images\bad.png">
+  <img src="E:\project html\images\okay.png">
+   <img src="E:\project html\images\good.png">
+    <img src="E:\project html\images\excellent.png">
+  </div>
+       </div>
+<div class="rating">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+
+</div>
+     </div>
+   </div>
+
+<script>
+  
+let stars=document.getElementsByClassName('fas');
+let emoji=document.getElementById('emoji');
+stars[0].onclick=function(){
+ stars[0].style.color="#ffd93b";
+ stars[1].style.color="#e4e4e4";
+ stars[2].style.color="#e4e4e4";
+ stars[3].style.color="#e4e4e4";
+ stars[4].style.color="#e4e4e4";
+ emoji.style.transform="translateX(0)";
+
+}
+stars[1].onclick=function(){
+ stars[0].style.color="#ffd93b";
+ stars[1].style.color="#ffd93b";
+ stars[2].style.color="#e4e4e4";
+ stars[3].style.color="#e4e4e4";
+ stars[4].style.color="#e4e4e4";
+ emoji.style.transform="translateX(-100px)";
+}
+stars[2].onclick=function(){
+ stars[0].style.color="#ffd93b";
+ stars[1].style.color="#ffd93b";
+ stars[2].style.color="#ffd93b";
+ stars[3].style.color="#e4e4e4";
+ stars[4].style.color="#e4e4e4";
+ emoji.style.transform="translateX(-200px)";
+}
+stars[3].onclick=function(){
+ stars[0].style.color="#ffd93b";
+ stars[1].style.color="#ffd93b";
+ stars[2].style.color="#ffd93b";
+ stars[3].style.color="#ffd93b";
+ stars[4].style.color="#e4e4e4";
+ emoji.style.transform="translateX(-300px)";
+}
+stars[4].onclick=function(){
+ stars[0].style.color="#ffd93b";
+ stars[1].style.color="#ffd93b";
+ stars[2].style.color="#ffd93b";
+ stars[3].style.color="#ffd93b";
+ stars[4].style.color="#ffd93b";
+ emoji.style.transform="translateX(-400px)";
+}
+
+</script>
+
+</body>
+</html>
