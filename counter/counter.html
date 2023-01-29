@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>counter</title>
+	<link rel="stylesheet" type="text/css" href="counter.css">
+</head>
+<body>
+<div class='counter'>
+	<h2 class="head"> Counter </h2>
+	<h4 class="number" id="number">0</h4>
+	<button class= 'btn prev-btn' id='prev-btn'> low</button>
+	<button class=" btn next-btn" id="next-btn">high</button>
+
+
+	<script>
+		
+// const increase=document.getElementById('next-btn');
+// const decrease =document.getElementById('prev-btn');
+// const counter=document.getElementById('number');
+
+// let count = 0;
+
+// increase.addEventListener('click',()=>{
+
+// count++;
+// counter.innerHTML=count;
+
+
+// });
+
+// decrease.addEventListener('click',()=>{
+
+// 	count--;
+// 	counter.innerHTML=count;
+
+
+// });
+
+const buttons =document.querySelectorAll('.btn');
+
+let count=0;
+
+buttons.forEach(function (button){
+
+button.addEventListener('click',function(){
+
+if(button.classList.contains('next-btn')){
+
+count++;
+
+}else if(button.classList.contains('prev-btn')){
+	count--;
+
+}
+
+const counter =document.querySelector('.number')
+counter.textContent = count;
+
+if(count<0){
+
+	counter.style.color="red";
+}else if(count>0){
+
+	counter.style.color="green";
+
+}else{
+	counter.style.color="black";
+}
+
+})
+
+
+})()
+
+
+
+
+
+	</script>
+
+
+</div>
+</body>
+</html>

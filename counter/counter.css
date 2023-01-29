@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=roboto:300);
+
+*{
+
+	margin:0px;
+	padding:0px;
+	font-family: 'RaleWay',sans-serif;
+}
+
+body ,html{
+	display: grid;
+	min-height: 100%;
+	place-items: center;
+	background-color: grey;
+}
+.counter{
+
+background-color:white ;
+height:350px;
+width: 600px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding:12px;
+}
+ button{
+
+outline: none;
+font-size: 15px;
+display: flex;
+flex-direction: column;
+padding:10px;
+margin:12px;
+align-items: center;
+cursor: pointer;
+width: 100px;
+text-align: center;
+}
+.counter h2{
+
+	font-size: 40px;
+}
+.counter h4{
+
+	font-size: 32px;
+	padding:6px;
+	margin-top:12px;
+	margin-bottom:12px;
+
+}
